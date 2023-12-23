@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function changeColor() {
+          var button = document.getElementById("myButton");
+
+         
+          if (button.classList.contains("aquamarine-button")) {
+              button.classList.remove("aquamarine-button");
+              button.classList.add("grey-button");
+          } else {
+              button.classList.remove("grey-button");
+              button.classList.add("aquamarine-button");
+          }
+      }
+      function changeColor1() {
+          var button = document.getElementById("grey-button1");
+
+         
+          if (button.classList.contains("aquamarine-button")) {
+              button.classList.remove("aquamarine-button");
+              button.classList.add("grey-button");
+          } else {
+              button.classList.remove("grey-button");
+              button.classList.add("aquamarine-button");
+          }
+      }
+      function hide() {
+           
+            document.getElementById('demo').style.display = 'none';
+        }
+
+        function show() {
+           
+            document.getElementById('demo').style.display = 'block';
+        }
+     
+
+       
+     
+  </script>
+<body>
+<h1 style="margin-left: 40%; font-size: 56px;">My todos</h1>
+   <input placeholder="  Add something to do... "  style="width: 75%; margin-left: 10%;height: 40px; border-radius: 10px; border-color: gray; font-size: 20px;"
+      ><button id="myButton" class="grey-button"  onclick="changeColor() "  style="width: 5%; height: 45px; margin-left: 5px; border-radius: 10px;  ">save</button>
+    <hr style="width: 80%; margin-left: 10%; margin-top: 15px;">
+    <div class="box">
+       <input type="checkbox">
+       <form style="width: 100%; " >
+        <input style="border-color: transparent;width: 90%; height: 45px; border-radius: 10px;" type="text"  value="install node js">
+        <button id="grey-button1" class="grey-button1"   style="width: 7%; height: 45px;  border-radius: 10px;" onclick="changeColor1()">save</button>
+    </form>
+       
+       
+       
+    
+       <button id="myButton1" onclick="" style="width: 7%; height: 45px; margin-left: 5px; border-radius: 10px;  ">remove</button>
+
+      
+
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+ 
+   
+
+</body>
+</html>
